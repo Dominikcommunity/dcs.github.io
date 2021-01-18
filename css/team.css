@@ -1,0 +1,261 @@
+body {
+    background: rgb(128, 128, 128);
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 100px;
+    z-index: 100000;
+    background-color: steelblue;  
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-family: Balsamiq Sans;
+}
+
+h3 {
+    color: white;
+    font-size: 40px;
+}
+
+/*Anfang Navigation*/
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header ul li a:hover {
+    color: black;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/lobby-2.png);
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+.logo {
+    width: 60px;
+}
+
+#login {
+    padding-left: 60px;
+    color: black;
+}
+
+#login:hover {
+    color: white;
+}
+/*Ende Navigation*/
+
+.message {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 35%;
+    bottom: 45%;
+    color: white;
+}
+
+/*Owner*/
+.owner-panel {
+    background-color: rgb(46, 46, 46);
+    display: inline-block;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.owner-name {
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.owner-rank {
+    background-color: #AA0000;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.owner-skin img {
+    width: 250px;
+}
+
+/*Admin*/
+.admin-panel {
+    background-color: rgb(46, 46, 46);
+    display: inline-block;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.admin-name {
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.admin-rank {
+    background-color: #ff1e1e;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.admin-skin img {
+    width: 250px;
+}
+
+/*Mods*/
+.mod-panel {
+    background-color: rgb(46, 46, 46);
+    display: inline-block;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.mod-name {
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.mod-rank {
+    background-color: #5555FF;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.mod-skin img {
+    width: 250px;
+}
+
+/*Sups*/
+.sup-panel {
+    background-color: rgb(46, 46, 46);
+    display: inline-block;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.sup-name {
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.sup-rank {
+    background-color: #55FFFF;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.sup-skin img {
+    width: 250px;
+}
+
+/*Builder*/
+.builder-panel {
+    background-color: rgb(46, 46, 46);
+    display: inline-block;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.builder-name {
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.builder-rank {
+    background-color: #55FF55;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.builder-skin img {
+    width: 250px;
+}
