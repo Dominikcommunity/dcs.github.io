@@ -12,9 +12,9 @@ body {
 }
 
 h1 {
-    color: black;
-    font-size: 60px;
-    padding: 10px;
+    color: white;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -102,7 +102,7 @@ header ul li a {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(../img/lobby-3.png);
+    background: url(../img/lobby-4.png);
     background-size: cover;
     filter: brightness(50%);
 }
@@ -116,16 +116,50 @@ header ul li a {
 }
 /*Ende Navigation*/
 
-.panel {
+.message1 {
     position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 40px;
+}
+
+.message2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 80px;
+}
+
+.btn {
+    border: none;
+    position: absolute;
+    padding: 10px;
+    top: 65%;
+    left: 42%;
+    text-decoration: none;
+    color: black;
     background-color: white;
-    text-align: center;
-    top: 30%;
-    left: 38%;
-    border: 1px solid black;
-    border-radius: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+    z-index: 1;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    border: none;
+    outline: none;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
